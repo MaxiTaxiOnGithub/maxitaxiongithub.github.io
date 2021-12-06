@@ -1,0 +1,92 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;  
+    color: white;  
+    text-align: center;
+    font-size: 25px;
+    background-color: #2c2f33;
+}
+
+.header {    
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    background-color: #23272a;
+    padding: 20px 10px;
+    margin-bottom: 25px;
+  }
+
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .header a:hover {
+    background-color: #35393d;
+  }
+  
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  .header-right {
+    float: right;
+  }
+
+  .parallax {
+    background-image: url("./static/img/thumbsup.jpeg");
+
+    min-height: 500px; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax1 {
+    background-image: url("./static/img/hobbys.jpg");
+
+    min-height: 500px; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax2 {
+    background-image: url("./static/img/alcohol.jpg");
+
+    min-height: 500px; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
